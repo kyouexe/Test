@@ -35,3 +35,12 @@ public boolean isCompleted() {
 public String getPriority() {
         return priority;
     }
+@Override
+    public String toString() {
+        return "Title: " + title +
+               "\nDescription: " + description +
+               "\nPriority: " + priority +
+               "\nStatus: " + (isCompleted ? "Completed" : "Pending") +
+               "\n---------------------------";
+    }
+}
