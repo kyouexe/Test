@@ -83,3 +83,9 @@ private static void addTask() {
         String title = sc.nextLine();
 System.out.print("Enter description: ");
         String desc = sc.nextLine();
+System.out.print("Enter priority (High/Medium/Low): ");
+        String priority = sc.nextLine();
+
+        tasks.add(new Task(title, desc, priority));
+        System.out.println("Task added!");
+    }
