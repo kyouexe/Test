@@ -26,3 +26,6 @@ public Task(String title, String description, String priority) {
         this.priority = priority;
         this.isCompleted = false;
     }
+public void markCompleted() {
+        isCompleted = true;
+    }
