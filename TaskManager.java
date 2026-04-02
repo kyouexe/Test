@@ -133,3 +133,27 @@ private static void sortTasks() {
         });
         System.out.println("Tasks sorted by priority!");
     }
+ private static void showCompleted() {
+        for (Task task : tasks) {
+            if (task.isCompleted()) {
+                System.out.println(task);
+            }
+        }
+    }
+
+    private static void saveTasks() {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
+            oos.writeObject(tasks);
+        } catch (IOException e) {
+            System.out.println("Error saving tasks.");
+        }
+    }
+
+    private static void loadTasks() {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_NAME))) {
+            tasks = (List<Task>) ois.readObject();
+        } catch (Exception e) {
+            tasks = new ArrayList<>();
+        }
+    }
+}
