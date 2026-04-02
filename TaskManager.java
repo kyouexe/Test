@@ -81,3 +81,5 @@ saveTasks();
 private static void addTask() {
         System.out.print("Enter title: ");
         String title = sc.nextLine();
+System.out.print("Enter description: ");
+        String desc = sc.nextLine();
