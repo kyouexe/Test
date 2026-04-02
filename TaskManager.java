@@ -78,3 +78,6 @@ saveTasks();
             }
         }
     }
+private static void addTask() {
+        System.out.print("Enter title: ");
+        String title = sc.nextLine();
