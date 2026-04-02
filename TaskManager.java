@@ -49,3 +49,5 @@ public class TaskManager {
     private static final String FILE_NAME = "tasks.dat";
     private static List<Task> tasks = new ArrayList<>();
     private static Scanner sc = new Scanner(System.in);
+public static void main(String[] args) {
+        loadTasks();
