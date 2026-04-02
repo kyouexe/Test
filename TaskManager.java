@@ -20,3 +20,9 @@ class Task implements Serializable {
     private String description;
     private String priority;
     private boolean isCompleted;
+public Task(String title, String description, String priority) {
+        this.title = title;
+        this.description = description;
+        this.priority = priority;
+        this.isCompleted = false;
+    }
