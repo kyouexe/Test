@@ -62,3 +62,11 @@ public static void main(String[] args) {
             System.out.println("7. Save & Exit");
 int choice = sc.nextInt();
             sc.nextLine();
+switch (choice) {
+                case 1 -> addTask();
+                case 2 -> viewTasks();
+                case 3 -> deleteTask();
+                case 4 -> markCompleted();
+                case 5 -> sortTasks();
+                case 6 -> showCompleted();
+                case 7 -> {
