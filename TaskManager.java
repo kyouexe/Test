@@ -126,3 +126,10 @@ private static void markCompleted() {
             System.out.println("Invalid index!");
         }
     }
+private static void sortTasks() {
+        tasks.sort((t1, t2) -> {
+            List<String> order = Arrays.asList("High", "Medium", "Low");
+            return order.indexOf(t1.getPriority()) - order.indexOf(t2.getPriority());
+        });
+        System.out.println("Tasks sorted by priority!");
+    }
