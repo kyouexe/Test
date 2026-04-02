@@ -101,6 +101,18 @@ private static void viewTasks() {
             System.out.println(task);
         }
     }
+    private static void markCompleted() {
+        viewTasks();
+        System.out.print("Enter task number to mark complete: ");
+        int index = sc.nextInt();
+
+        if (index > 0 && index <= tasks.size()) {
+            tasks.get(index - 1).markCompleted();
+            System.out.println("Task marked as completed!");
+        } else {
+            System.out.println("Invalid index!");
+        }
+    }
 private static void deleteTask() {
         viewTasks();
         System.out.print("Enter task number to delete: ");
