@@ -29,3 +29,6 @@ public Task(String title, String description, String priority) {
 public void markCompleted() {
         isCompleted = true;
     }
+public boolean isCompleted() {
+        return isCompleted;
+    }
