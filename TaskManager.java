@@ -32,3 +32,6 @@ public void markCompleted() {
 public boolean isCompleted() {
         return isCompleted;
     }
+public String getPriority() {
+        return priority;
+    }
