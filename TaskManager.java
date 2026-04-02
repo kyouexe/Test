@@ -60,3 +60,5 @@ public static void main(String[] args) {
             System.out.println("5. Sort by Priority");
             System.out.println("6. Show Completed Tasks");
             System.out.println("7. Save & Exit");
+int choice = sc.nextInt();
+            sc.nextLine();
