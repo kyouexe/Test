@@ -51,3 +51,12 @@ public class TaskManager {
     private static Scanner sc = new Scanner(System.in);
 public static void main(String[] args) {
         loadTasks();
+ while (true) {
+            System.out.println("\n===== TASK MANAGER =====");
+            System.out.println("1. Add Task");
+            System.out.println("2. View Tasks");
+            System.out.println("3. Delete Task");
+            System.out.println("4. Mark Task Completed");
+            System.out.println("5. Sort by Priority");
+            System.out.println("6. Show Completed Tasks");
+            System.out.println("7. Save & Exit");
