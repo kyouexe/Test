@@ -70,3 +70,11 @@ switch (choice) {
                 case 5 -> sortTasks();
                 case 6 -> showCompleted();
                 case 7 -> {
+saveTasks();
+                    System.out.println("Tasks saved. Exiting...");
+                    return;
+                }
+                default -> System.out.println("Invalid choice!");
+            }
+        }
+    }
