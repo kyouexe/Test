@@ -89,3 +89,15 @@ System.out.print("Enter priority (High/Medium/Low): ");
         tasks.add(new Task(title, desc, priority));
         System.out.println("Task added!");
     }
+private static void viewTasks() {
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks available.");
+            return;
+        }
+
+        int i = 1;
+        for (Task task : tasks) {
+            System.out.println("Task #" + i++);
+            System.out.println(task);
+        }
+    }
