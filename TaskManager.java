@@ -15,3 +15,8 @@ import java.util.*;
  * - Save & Load from File
  * =========================================================
  */
+class Task implements Serializable {
+    private String title;
+    private String description;
+    private String priority;
+    private boolean isCompleted;
