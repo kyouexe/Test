@@ -27,7 +27,7 @@ public Task(String title, String description, String priority) {
         this.isCompleted = false;
     }
 public void markCompleted() {
-        isCompleted = true;
+        isCompleted = true
     }
 public boolean isCompleted() {
         return isCompleted;
